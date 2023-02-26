@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="220dp"
     android:orientation="vertical"
-    android:background="@drawable/img_7"
-
+    android:background="@drawable/header_bg1"
     android:gravity="center"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 

@@ -13,13 +13,50 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         />
+
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-    <include
-        layout="@layout/main_content"
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/basic_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASIC"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/advance_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADVANCED"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/learn_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEARNING"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
         />
+
+
+  <!--  <include
+        layout="@layout/main_content"
+    />-->
+
 
 </LinearLayout>
